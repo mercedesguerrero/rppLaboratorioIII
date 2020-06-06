@@ -342,12 +342,32 @@ window.onload= inicializar;
     function altaPersona() 
     {
         var inputs = document.getElementsByClassName('inputForm');
-
+        var hayError= false;
         var year= obtenerValorSelect();
+        var select= document.getElementById('yearSelect');
+
+        inputs[0].classList.remove('error');
+        inputs[1].classList.remove('error');
+        select.classList.remove('error');
+
+        if(inputs[0].value.length<3){
+            hayError= true;
+            inputs[0].classList.add('error');
+        }
+        if(inputs[1].value.length<3){
+            hayError= true;
+            inputs[1].classList.add('error');
+        }
+        if(year<2000 && year>2020){
+            hayError= true;
+            select.classList.add('error');
+        }
+        if(!hayError){
+            var nuevaPersona = new Persona(inputs[0].value, inputs[1].value, year);
+            guardarPersona(nuevaPersona);
+            removerObjetos();
+        }
     
-        var nuevaPersona = new Persona(inputs[0].value, inputs[1].value, year);
-        guardarPersona(nuevaPersona);
-        removerObjetos();
     }
 
     function eliminacionPersona() 

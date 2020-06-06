@@ -38,7 +38,7 @@ input[type=text],input[type=password],input[type=date],select{
 }
 
 .error{
-
+    border: 5px solid rgb(172, 18, 48);
 }
 
 .button{
