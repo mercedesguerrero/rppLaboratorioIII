@@ -1,0 +1,274 @@
+body
+{
+    z-index: -2;
+    
+}
+
+.contenedor{
+    width: 50%;
+    top: 100px;
+    left: 25%;
+    border-radius: 30px;
+    background-color: rgb(224, 22, 100);
+    background-image: url("../images/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    position: absolute;
+
+    -webkit-animation-name: animacionForm;
+    -webkit-animation-duration: 3s; 
+    animation-name: animacionForm 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation-duration: 2s;
+    
+}
+
+input[type=text],input[type=password],input[type=date],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sinerror{
+    border: 1px solid #ccc;
+}
+
+.error{
+
+}
+
+.button{
+    background-color: rgb(216, 127, 212);
+    border: none;
+    width: 30%;
+    color: rgb(241, 234, 238);
+    padding: 15px 32px;
+    /* margin: 6px 2px; */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover{
+    background-color: indianred;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: mediumorchid;
+}
+
+th{
+    background-color: lightslategray;
+    color: rgb(246, 246, 248);
+}
+
+.container{
+    border: 3px solid rgb(103, 27, 122);
+    display: flex;
+}
+
+.labelForm{
+    color: rgb(246, 246, 248);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.initial{
+    flex: initial;
+    border: 3px solid rgb(236, 129, 218);
+    width: 200px;
+    min-width: 100px;
+}
+
+.none{
+    flex: none;
+    border: 3px solid rgb(236, 129, 218);
+    width: 200px;
+}
+
+.flex1{
+    flex: auto;
+    border: 3px solid rgb(236, 129, 218);
+    width: 200px;
+}
+ 
+.final{
+    flex: content;
+    border: 3px solid rgb(236, 129, 218);
+    width: 200px;
+}
+
+.frm table
+{
+    position: relative;
+    right: 20%;
+}
+
+form table{
+
+    vertical-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: rgba(158, 25, 102, 0.8);
+    transition: background-color 1.0s ease-in-out;
+    border-radius: 50px;
+    padding: 45px 80px;   
+
+}
+
+body{
+
+    background-color: rgba(219, 157, 235, 0.589);
+    background-image: linear-gradient(to top, rgba(91, 75, 241, 0), rgb(80, 13, 126));
+    padding-top: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+#tablaLista{
+    border: 1px solid rgb(129, 20, 192);
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#bodyTabla{
+    text-align: center;
+    border: 1px solid rgb(233, 129, 210);
+}
+
+#logo{
+    width: 500px;    
+    position: relative;
+    top: 50px;
+    left: 30px;
+    
+}
+
+#tablaLista{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#tablaLista tr{
+    background-color: rgb(228, 197, 203);
+    transition: background-color 0.5s ease-in-out;
+}
+
+#tablaLista th{
+    background-color: rgb(93, 13, 124);
+    color:  rgb(240, 220, 224);
+}
+
+#tablaLista tr:hover
+{
+    background-color:  rgb(131, 22, 131);
+}
+
+.btnAlta{
+
+    border-radius: 5px;
+    background-color: rgb(228, 197, 203);
+    transition: background-color 0.7s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnAlta:hover
+{
+    background-color: rgba(185, 22, 158, 0.945);
+}
+
+
+.btnForm{
+    border-radius: 5px;
+    transition: background-color 0.7s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    color: rgb(241, 234, 238);
+    padding: 10px 27px;
+    /* margin: 6px 2px; */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.btnGuardar{
+    background-color: rgb(54, 11, 155);
+}
+
+.btnCancelar{
+    background-color: rgb(218, 28, 69);
+}
+
+.puntero{
+
+    border-radius: 5px;
+    background-color: rgb(228, 197, 203);
+    transition: background-color 0.7s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#spinner
+{
+    position: relative;
+    padding: 20px;
+    left: 50%;
+    z-index: 2;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+  /* Standard syntax */
+  @keyframes animacionForm {
+    from {background-color: rgba(238, 128, 170, 0.699);}  
+        
+    0%   {left:25%; top:400px;transform: translateZ(-400);}
+    15%  {left:25%; top:75px;}
+    30%  {left:25%; top:100px;}
+    45%  {background-color: rgba(233, 71, 133, 0.623); left:25%; top:85px;}
+    60%  {left:25%; top:100px;}
+    75%  {left:25%; top:95px;}
+    100% {left:25%; top:100px;}
+    to {background-color: rgba(235, 33, 110, 0.623);transform: translateZ(0);}
+  }
