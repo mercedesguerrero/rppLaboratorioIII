@@ -58,7 +58,7 @@ window.onload= inicializar;
             if(xhr.status == 200)
             {
             document.getElementById('loadingDiv').style.display = 'none';
-            document.getElementById('spinner').style.display = 'none';
+            // document.getElementById('spinner').style.display = 'none';
             var lista = JSON.parse(xhr.responseText);
             //console.log(lista);
             crearTabla(lista);
@@ -71,7 +71,7 @@ window.onload= inicializar;
         else
         {
             document.getElementById('loadingDiv').style.display = 'block';
-            document.getElementById('spinner').style.display = 'block';    
+            // document.getElementById('spinner').style.display = 'block';    
         }
     }
 
@@ -82,7 +82,7 @@ window.onload= inicializar;
             if(xhr.status == 200)
             {
                 document.getElementById('loadingDiv').style.display = 'none';
-                document.getElementById('spinner').style.display = 'none';
+                // document.getElementById('spinner').style.display = 'none';
                 
                 actualizarTabla(JSON.parse(xhr.responseText));
             }
@@ -94,7 +94,7 @@ window.onload= inicializar;
         else
         {
             document.getElementById('loadingDiv').style.display = 'block';
-            document.getElementById('spinner').style.display = 'block';    
+            // document.getElementById('spinner').style.display = 'block';    
         }
     }
 
